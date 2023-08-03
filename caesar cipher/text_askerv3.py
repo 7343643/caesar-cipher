@@ -11,7 +11,7 @@ print("")
 decrypt = ("decrypt")
 #makes a variable called response which is empty
 response = ("")
-#makes a variable called encrypt which contains the word encryot
+#makes a variable called encrypt which contains the word encrypt
 encrypt = ("encrypt")
 #makes a loop that will ask the user if they want to encrypt or decrypt and will only stop when a either encrypt or decrypt
 while response != encrypt or decrypt:
@@ -30,7 +30,7 @@ if response == encrypt:
     #tells the user that the key generator is starting
     print("starting key generator")
     #imports the key generator
-    import key_generator
+    import key_genarator
 #checks if the users input was decrypt and starts the key asker if it was
 else:
     if response == decrypt:
