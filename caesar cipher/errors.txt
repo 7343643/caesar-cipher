@@ -1,1 +1,0 @@
-error_1 = user inputted something that was not encrypt or decrypt, but the program ended the loop anyway and the program could not continue
