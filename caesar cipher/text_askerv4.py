@@ -24,28 +24,13 @@ while response != encrypt or decrypt:
     else:
         if response == encrypt:
             break
+        #if the response it not encrypt tell the user to enter encrypt or decrypt
         else:
             print("please enter encrypt or decrypt")
 
-#checks if the users input was encrypt and starts the key generator if it was
-if response == encrypt:
-    #tells the user that the key generator is starting
-    print("starting key generator")
-    #imports the key generator
-    import key_genaratorv2
-    #runs the key generator
-    key_genaratorv2.keygen()
-    #gets the key variable from the key generator
-    key = key_genaratorv2.key
-    #gets the shift variable from the key generator
-    shift = key_genaratorv2.shift
-#checks if the users input was decrypt and starts the key asker if it was
-else:
-    if response == decrypt:
-        #imports the key generator
-        import key_asker
-        key_asker.key_asker()
-        shift = key_asker.shift
-    #prints an error if the user inputted something other than encrypt or decrypt, but instead of looping until a valid input the program broke the loop
-    else:
-        print("error")
+#imports the key asker
+import key_askerv2
+#starts the key asker
+key_askerv2.key_asker(response)
+#imports the shift variable from the key asker
+from key_askerv2 import shift
