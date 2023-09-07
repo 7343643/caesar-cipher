@@ -1,8 +1,5 @@
-#asks the user to input the text they want to encrypt or decrypt and writes the the response to the text.txt file in lowercase
+#asks the user to input the text they want to encrypt or decrypt and assigns what the user inputted to a variable called message in lowercase
 message = (input("please input the text you want to be encrypt/decrypted ").lower())
-#closes the text.txt file
-
-
 #prints nothing which creates a blank line in the output
 print("")
 #makes a variable called decrypt which contains the word decrypt
